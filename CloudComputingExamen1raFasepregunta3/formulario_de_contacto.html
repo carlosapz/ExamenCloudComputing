@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuela con nosotros</title>
+    <link rel="stylesheet" href="dist/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></head>
+
+</head>
+<body>
+    <nav>
+        <aside class="navbar">
+            <div class="logo">
+                <h1>ABC</h1>
+            </div>
+            <div class="class menu-toggle-wrap">
+                <input type="checkbox" class="btn-menu" id="btn-menu">
+                <label for="btn-menu" class="material-icons menu-toggle">double_arrow</label>
+            </div>
+            <h3>MENU</h3>
+            <div class="menu">
+                <a href="http://127.0.0.1:5500/pagdeaviacion.html#" class="button">
+                    <span class="material-icons">home</span>
+                    <span class="text">Inicio</span>
+                </a>
+                <a href="http://127.0.0.1:5500/nuestros_productos.html" class="button">
+                    <span class="material-icons">airplanemode_active</span>
+                    <span class="text">Vuelos</span>
+                </a>
+                <a href="http://127.0.0.1:5500/hoteles.html" class="button">
+                    <span class="material-icons">hotel</span>
+                    <span class="text">Hoteles</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">description</span>
+                    <span class="text">Antes de viajar</span>
+                </a>
+                <a href="http://127.0.0.1:5500/formulario_de_contacto.html" class="button">
+                    <span class="material-icons">email</span>
+                    <span class="text">Contactos</span>
+                </a>
+            </div>
+
+            <div class="flex">
+                <div class="menu">
+                    <a href="#" class="button">
+                        <span class="material-icons">settings</span>
+                        <span class="text">Configuracion</span>
+                    </a>
+                </div>
+            </div>
+
+        </aside>
+    </nav>
+
+
+    
+
+    <div class="container text-center">
+
+        <div class="image-container">
+            <img src="img/vuelo.jpg" alt="">
+            <h1 class="text-white mt-2 pl-3 mb-3">VIAJA CON NOSOTROS</h1>
+        </div>
+
+        <div class="card">
+            <h1 class="text-info">Formulario de Contacto</h1>
+        <form action="#" method="POST" class="contact-form">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <label for="nombre" class="text-info">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control bg-grey text-black" required>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <label for="correo" class="text-info">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" class="form-control bg-grey text-black" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <label for="mensaje" class="text-info">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control bg-grey text-black" rows="4" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <button type="submit" class="btn btn-outline-info">Enviar</button>
+                </div>
+            </div>
+        </form>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@use '../variables' as v;
+@use 'sass:color';
+@mixin btn($bg-color: v.$white, $border: 0) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: v.$base-padding v.$base-padding*2;
+    border-radius: v.$base-border-radius;
+    background-color: $bg-color;
+    border: $border;
+}
+
+@each $key, $val in v.$colors{
+    .btn-#{$key}{
+        @include btn($val);
+        @if($val != white){
+            &:hover{
+                background-color: color.adjust($val, $lightness:15%);
+            }
+        }
+        @else{
+            &:hover{
+                background-color: color.adjust($val, $lightness:-20%);
+            }
+        }
+    }
+
+    .btn-outline-#{$key}{
+        @include btn($border: v.$base-border-width solid $val);
+        &:hover{
+            background-color: $val;
+            color: v.$white;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@use 'base';
+@use 'variables' as v;
+@use 'components';
+@use 'colors';
+@use 'utilities';
+@use 'breakpoints';
+@use 'grid';
+
+/*
+//style de h1
+h1{
+    color: v.$primary;
+    margin-bottom: v.$base-margin;
+
+}
+a{
+    color: v.$secundary;
+    font-family: Merriweather;
+
+}
+button{
+    font-family: Lobster;
+    color: v.$white;
+    border: 0;
+    background-color: v.$primary;
+    cursor: pointer;
+    
+}
+.error{
+    
+    font-family: Anton;
+    color: v.$error;
+    //border-color: $error;
+    border-color: v.$black;
+    border-style: solid;
+
+    margin: v.$base-margin;
+    padding: v.$base-padding;
+    border-radius: v.$base_border-radius;
+    border-width: v.$base-border-width;
+}
+
+.notificacion{
+    font-family: Anton;
+    color: v.$secundary;
+    //border-color: $secundary;
+    border-color: v.$black;
+    border-style: solid;
+
+    margin: v.$base-margin;
+    padding: v.$base-padding;
+    border-radius: v.$base_border-radius;
+    border-width: v.$base-border-width;
+}
+*/

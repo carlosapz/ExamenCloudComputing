@@ -1,0 +1,68 @@
+@use 'sass:map';
+
+//Variables
+//Theme colors
+$primary: #191D88;
+$secondary: #1ac861;
+$error: tomato;
+$info: #E5D283;
+$white: #fff;
+$black: #000;
+
+
+
+
+$teal: teal ;
+$grey: #F0F0F0;
+$navy: #191D88;
+$blue: #1450A3;
+$yellow: #FFC436;
+$sea: #337CCF;
+
+//font family
+$font-family: Lobster; 
+
+//Espaciado (Spacing)
+$base-padding: 1rem;
+$base-margin: 1rem;
+
+//Borders (borders)
+$base-border-width: 1px;
+$base_border-radius: 15px;
+
+//Box shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,1);
+//$base-font-size: 1rem;
+//letra responsiva
+$base-font-size: calc(15px + 0.3966125vw);
+//letra responsiva con mas vision
+//$base-font-size: calc(15px + 5vw);
+$font-size-sm: calc($base-font-size * 0.75);
+$font-size-lg: calc($base-font-size * 1.5);
+$font-size-xl: calc($base-font-size * 2);
+$font-size-xxl: calc($base-font-size * 3);
+
+//variables maps
+$colors: (
+    "primary" : $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "white": $white,
+    "black": $black,
+    "teal": $teal ,
+    "grey": $grey,
+    "navy": $navy,
+    "blue": $blue,
+    "yellow": $yellow,
+    "sea": $sea,
+);
+
+/*.button{
+    font-family: Lobster;
+    color: $white;
+    border: 0;
+    background-color: map.get($colors , "info" );
+    cursor: pointer;
+    
+};*/

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Sass</title>
+    <link rel="stylesheet" href="dist/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"></head>
+
+<body>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <h1>HOLA MUNDO DESDE SASS</h1>
+    <a href="#">link de hola mundo desde Sass</a>
+    <p class="error">Mensaje de error</p>
+    <p class="notificacion">Mensaje de notificacion</p> 
+    <button class="button">No presionar el boton</button>-->
+
+        <!-- <nav>
+            <aside class="navbar">
+                <div class="logo">
+                    <h1>App</h1>
+                </div>
+                <div class="class menu-toggle-wrap">
+                    <input type="checkbox" class="btn-menu" id="btn-menu">
+                    <label for="btn-menu" class="material-icons menu-toggle">double_arrow</label>
+                </div>
+                <h3>menu</h3>
+                <div class="menu">
+                    <a href="#" class="button">
+                        <span class="material-icons">home</span>
+                        <span class="text">Home</span>
+                    </a>
+                    <a href="#" class="button">
+                        <span class="material-icons">group</span>
+                        <span class="text">Team</span>
+                    </a>
+                    <a href="#" class="button">
+                        <span class="material-icons">description</span>
+                        <span class="text">About</span>
+                    </a>
+                    <a href="#" class="button">
+                        <span class="material-icons">email</span>
+                        <span class="text">Contact</span>
+                    </a>
+                </div>
+
+                <div class="flex">
+                    <div class="menu">
+                        <a href="#" class="button">
+                            <span class="material-icons">settings</span>
+                            <span class="text">Configuration</span>
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+        </nav>
+
+    <main class="container">
+
+        <h2> Cards </h2>
+        <div class="card">
+            <h1 class="card-title"> Titulo del card</h1>
+            <p class="card-body"> Cuerpo del card Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                adipisci unde facere deserunt pariatur veniam voluptas fugiat omnis sapiente delectus! Nesciunt, commodi
+                omnis! Maiores, sunt perspiciatis mollitia aliquid reiciendis cumque. <a href="#">leer mas..</a> </p>
+
+        </div>
+        <h2>Colores</h2>
+        <div class="text-primary">Texto de prueba </div>
+        <div class="text-secundary">Texto de prueba </div>
+        <div class="text-info">Texto de prueba </div>
+        <div class="text-error">Texto de prueba </div>
+        <div class="text-white">Texto de prueba </div>
+        <div class="text-black">Texto de prueba </div>
+        <h2> Fondo de colores</h2>
+        <div class="bg-primary">texto de prueba </div>
+        <div class="bg-secundary">texto de prueba </div>
+        <div class="bg-info">texto de prueba </div>
+        <div class="bg-error">texto de prueba </div>
+        <div class="bg-white">texto de prueba </div>
+        <div class="bg-black">texto de prueba </div>
+        <div class="bg-navy">texto de prueba </div>
+        <div class="bg-sea">texto de prueba </div>
+        <br>
+        <div class="bg-primary-dark-4">texto de prueba </div>
+        <div class="bg-primary-dark-3">texto de prueba </div>
+        <div class="bg-primary-dark-2">texto de prueba </div>
+        <div class="bg-primary-dark-1">texto de prueba </div>
+
+        <div class="bg-primary">texto de prueba </div>
+
+        <div class="bg-primary-light-1">texto de prueba </div>
+        <div class="bg-primary-light-2">texto de prueba </div>
+        <div class="bg-primary-light-3">texto de prueba </div>
+        <div class="bg-primary-light-4">texto de prueba </div>
+
+        <br>
+        <div class="bg-white-dark-4">texto de prueba </div>
+        <div class="bg-white-dark-3">texto de prueba </div>
+        <div class="bg-white-dark-2">texto de prueba </div>
+        <div class="bg-white-dark-1">texto de prueba </div>
+
+        <div class="bg-white">texto de prueba </div>
+
+        <h2>BOTONES</h2>
+
+        <a href="#" class="btn-primary text-white">Haz click</a>
+        <a href="#" class="btn-secundary text-white">Haz click</a>
+        <a href="#" class="btn-error text-white">Haz click</a>
+        <a href="#" class="btn-info text-white">Haz click</a>
+        <a href="#" class="btn-white text-black">Haz click</a>
+        <a href="#" class="btn-black text-white">Haz click</a>
+
+        <a href="#" class="btn-outline-primary text-primary">Haz click</a>
+        <a href="#" class="btn-outline-secundary text-secundary">Haz click</a>
+        <a href="#" class="btn-outline-error text-error">Haz click</a>
+        <a href="#" class="btn-outline-info text-info">Haz click</a>
+        <a href="#" class="btn-outline-white text-black">Haz click</a>
+        <a href="#" class="btn-outline-black text-black">Haz click</a>
+
+        <br>
+
+        <h1>borders</h1>
+
+        <button class="btn-primary text-white br-none ml-2">none</button>
+        <button class="btn-secundary text-white br-default ml-3">default</button>
+        <button class="btn-error text-white br-xs ml-4">xs</button>
+        <button class="btn-info text-white br-sm ml-2">sm</button>
+        <button class="btn-black text-white br-lg ml-2">lg</button>
+        <button class="btn-secundary text-white br-full ml-2 mt-3">full</button>
+
+        <br>
+
+        <h2 class="mb-2">Media Querys</h2>
+        <div class="resp-text">Texto Responsivo de Prueba</div>
+
+        <hr class="mt-4 mb-4">
+
+        <h2 class="mb-2">GRID</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
+                </div>
+            </div>
+        </div>
+    </main> -->
+</body>
+
+</html>

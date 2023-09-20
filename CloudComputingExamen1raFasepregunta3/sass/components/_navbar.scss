@@ -1,0 +1,73 @@
+@use '../variables' as v;
+@use 'sass:color';
+
+$sidebar-width: 350px;
+
+.btn-menu{
+    display: none;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+.navbar{
+    &:has(input[type="checkbox"]:checked){
+        width: $sidebar-width;
+        .menu-toggle-wrap{
+            top: -2rem;
+            .menu-toggle{
+                rotate: z -180deg;
+            }
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    background-color: v.$sea;
+    color: v.$yellow;
+    width: calc(1rem + 32px);
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 1rem;
+    transition: 0.2s ease-in-out;
+    
+    .flex{
+        flex: 1 1 0%;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .menu-toggle-wrap{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+        position: relative;
+        top: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    .menu{
+
+        .button{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: 0.2s ease-in-out;
+            .material-icons{
+                font-size: 2rem;
+                color: v.$white;
+    
+            }
+            .text{
+                margin-left: 1rem;
+                color: v.$white;
+    
+            }
+            &:hover{
+                background-color: v.$yellow;
+            }
+        }
+    }
+
+    position: absolute;
+}

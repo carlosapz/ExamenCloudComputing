@@ -1,0 +1,39 @@
+@use 'breakpoints' as b;
+@use 'variables' as v;
+
+//Definir el numero de columnas
+$grid-cols: 12;
+
+//Definir clases de layout
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    padding-left: 6rem;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat($grid-cols, 1fr);
+    gap: 20px;
+
+    padding: 10px;
+
+    margin: 10px;
+}
+
+
+//Definir clases de columna
+@each $k, $value in b.$breakpoints{
+    @include b.breakpoint($value){
+        @for $i from 1 through $grid-cols {
+            .col-#{$k}-#{$i}{
+                grid-column: span $i;
+            }
+        }
+    }
+}
