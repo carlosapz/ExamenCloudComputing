@@ -15,7 +15,7 @@ Proyecto que aplica conceptos de infraestructura, contenedores o despliegue en l
 
 ## 🧰 Tecnologías usadas
 
-- HTML / CSS / SCSS (según análisis del repo actual) :contentReference[oaicite:1]{index=1}  
+- HTML / CSS / SCSS (según análisis del repo actual)
 - Otras posibles tecnologías: Docker, contenedores, servicios de nube, configuración de infraestructura (ver carpeta de proyecto).  
 - Código, scripts o infraestructura como código (dependiendo de la práctica).
 
@@ -29,28 +29,29 @@ Proyecto que aplica conceptos de infraestructura, contenedores o despliegue en l
    ```bash
    git clone https://github.com/carlosapz/ExamenCloudComputing.git
    cd ExamenCloudComputing
+   ```
 
+2. Revisa el contenido:
+   - Inspecciona carpetas del proyecto (por ejemplo `css/`, `html/`, `docker‑compose.yml`, `scripts/` si existen).  
+   - Abre el archivo `index.html` (o la ruta principal) en tu navegador local.
 
-Revisa el contenido:
+3. Si se utiliza Docker o contenedores (por ejemplo `docker-compose.yml`):
+   ```bash
+   docker-compose up -d
+   # Espera que los servicios inicien, luego accede al navegador en http://localhost:<puerto>
+   ```
 
-Inspecciona carpetas del proyecto (por ejemplo css/, html/, docker-compose.yml, scripts/ si existen).
+4. Si no se usa contenedores, simplemente abre:
+   ```bash
+   open index.html    # macOS / Linux
+   start index.html   # Windows
+   ```
 
-Abre el archivo index.html (o la ruta principal) en tu navegador local.
+---
 
-Si se utiliza Docker o contenedores (por ejemplo docker-compose.yml):
+## 📁 Estructura del proyecto
 
-docker-compose up -d
-# Espera que los servicios inicien, luego accede al navegador en http://localhost:<puerto>
-
-
-Si no se usa contenedores, simplemente abre:
-
-open index.html    # macOS / Linux
-start index.html   # Windows
-
-
-
-📁 Estructura del proyecto
+```
 ExamenCloudComputing/
 ├─ css/
 │   └─ estilos.scss    ← estilos del proyecto
@@ -59,21 +60,44 @@ ExamenCloudComputing/
 ├─ assets/             ← imágenes, fuentes, etc.
 ├─ docs/               ← documentación o entregables del examen
 └─ README.md
+```
 
+*(La estructura exacta puede variar según el proyecto entregado por el curso).*
 
-(La estructura exacta puede variar según el proyecto entregado por el curso).
+---
 
-✅ Buenas prácticas aplicadas
+## ✅ Buenas prácticas aplicadas
 
-Uso de HTML5 semántico y etiquetas adecuadas.
+- Uso de HTML5 semántico y etiquetas adecuadas.  
+- Estilos con CSS3 / SCSS (separación de diseño y contenido).  
+- Organización clara de carpetas para assets, estilos y código fuente.  
+- Deployment local o mediante contenedor, demostrando comprensión de infraestructuras.
 
-Estilos con CSS3 / SCSS (separación de diseño y contenido).
+---
 
-Organización clara de carpetas para assets, estilos y código fuente.
+## 📝 Contexto educativo
 
-Deployment local o mediante contenedor, demostrando comprensión de infraestructuras.
-
-📝 Contexto educativo
-
-Este proyecto fue realizado como parte de la asignatura Cloud Computing en la universidad. Su propósito es demostrar mis conocimientos en la materia y servir como componente de mi portafolio técnico.
+Este proyecto fue realizado como parte de la asignatura **Cloud Computing** en la universidad. Su propósito es demostrar mis conocimientos en la materia y servir como componente de mi portafolio técnico.  
 Está documentado para mostrar al lector/reclutador no sólo el resultado, sino también mi proceso de aprendizaje.
+
+---
+
+## 📚 Próximas mejoras
+
+- [ ] Contenedor Docker revisado para producción ligera.  
+- [ ] Despliegue en plataforma cloud (por ejemplo AWS Lightsail, Heroku, DigitalOcean).  
+- [ ] Monitorización básica o logs accesibles.  
+- [ ] Documentación adicional en `docs/`: diagrama de arquitectura, decisiones técnicas, retos superados.
+
+---
+
+## 📫 Contacto
+
+- ✉️ Email: dcarlosrapz@gmail.com  
+- 🔗 LinkedIn: https://www.linkedin.com/in/diego-carlos-rojas-apaza-90b4a3252  
+- 🐙 GitHub: https://github.com/carlosapz
+
+---
+
+> Licencia MIT – ver archivo `LICENSE` en el repo (añade si aún no está).  
+> Proyecto para uso educativo; cualquier uso comercial debe adaptarse y revisarse.
